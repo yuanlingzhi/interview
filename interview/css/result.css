@@ -1,0 +1,142 @@
+   header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    header > section:first-of-type
+    {
+        flex: 1 0 60%;
+        box-sizing:border-box;
+    }
+    header > section:nth-of-type(2)
+    {
+        flex: 1 0 40%;
+        text-align: right;
+        font-size: 1.5em;
+        padding: 5px 15px 0px 0px;
+        box-sizing:border-box;
+    }
+    header > section:nth-of-type(2) > a
+    {
+        color:#55b7f3;
+        text-decoration:none;
+    }
+    header > section:nth-of-type(2) > a:hover
+    {
+        background: none;
+        color:#5cbcf6;
+        text-decoration:underline;
+    }
+    header > section:last-of-type
+    {
+        flex: 0 1 100%;
+        padding-bottom: 20px;
+        box-sizing:border-box;
+    }
+    
+    body{
+        min-width:240px;
+        background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #1E4552),
+        color-stop(1, #C4D7F2)
+        );
+        background-image: -o-linear-gradient(bottom, #1E4552 0%, #C4D7F2 100%);
+        background-image: -moz-linear-gradient(bottom, #1E4552 0%, #C4D7F2 100%);
+        background-image: -webkit-linear-gradient(bottom, #1E4552 0%, #C4D7F2 100%);
+        background-image: -ms-linear-gradient(bottom, #1E4552 0%, #C4D7F2 100%);
+        background-image: linear-gradient(to bottom, #1E4552 0%, #C4D7F2 100%);
+        background-repeat:no-repeat;
+    }
+    .resblock
+    {
+        display:flex;
+        flex-flow:column wrap;
+        -webkit-box-shadow: 2px 8px 25px -2px rgba(0,0,0,0.3);
+           -moz-box-shadow: 2px 8px 25px -2px rgba(0,0,0,0.3);
+                box-shadow: 2px 8px 25px -2px rgba(0,0,0,0.3);
+        border-radius:8px;
+        margin:auto;
+        margin-top: 20px;
+        width:70%;
+        height:1000px;
+        background-color: #545f60;
+    }
+    #result
+    {
+        margin-left:4%;
+        width:92%;
+    }
+    #result>section:first-child{
+
+    }
+    #result>section:first-child>h1
+    {
+        font-family:Copperplate;
+        font-size:1.5em;
+        color: rgba(255,168,0,1);
+    }
+    #result>section:first-child>h1{
+
+    }
+    .ng-section>p
+    {
+        word-wrap: break-word;
+        font-family:Georgia;
+        font-size:1.2em;
+        font-weight: 100%;
+        color: white;
+    }
+    .ng-section>footer
+    {
+        font-style: italic;
+        font-family: Cambria;
+        font-size: 1em;
+        font-weight: 100%;
+        text-align: right;
+        color: rgba(110,222,239,0.9);
+    }
+    .ng-section>footer>span
+    {
+        padding-left: 0.5em;
+        font-size: 0.9em;
+        font-style: italic;
+    }
+
+    .ng-section>p>a
+    {
+        color:white;
+        text-decoration:none;
+    }
+    .ng-section>p>a:hover
+    {
+        background: none;
+        color:white;
+        text-decoration:underline;
+    }
+    #postedat
+    {
+
+    }
+
+    @media screen and (max-width:480px)
+    {      
+        header > section:nth-of-type(2){
+            padding:0px;
+        }
+        
+        section a{
+            font-size:15px;           
+        }
+        #postedat
+        {
+            display: none;
+        }
+        .ng-section>footer
+        {
+            font-size:0.6em;
+        }
+    }

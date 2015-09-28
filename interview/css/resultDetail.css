@@ -1,0 +1,270 @@
+   header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    header > section:first-of-type
+    {
+        flex: 1 0 60%;
+        box-sizing:border-box;
+    }
+    header > section:nth-of-type(2)
+    {
+        flex: 1 0 40%;
+        text-align: right;
+        font-size: 1.5em;
+        padding: 5px 15px 0px 0px;
+        box-sizing:border-box;
+    }
+    header > section:nth-of-type(2) > a
+    {
+        color:#55b7f3;
+        text-decoration:none;
+    }
+    header > section:nth-of-type(2) > a:hover
+    {
+        background: none;
+        color:#5cbcf6;
+        text-decoration:underline;
+    }
+    header > section:last-of-type
+    {
+        flex: 0 1 100%;
+        padding-bottom: 20px;
+        box-sizing:border-box;
+    }
+
+    body{
+        min-width:240px;
+        background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #1E4552),
+        color-stop(1, #C4D7F2)
+        );
+        background-image: -o-linear-gradient(bottom, #1E4552 0%, #C4D7F2 100%);
+        background-image: -moz-linear-gradient(bottom, #1E4552 0%, #C4D7F2 100%);
+        background-image: -webkit-linear-gradient(bottom, #1E4552 0%, #C4D7F2 100%);
+        background-image: -ms-linear-gradient(bottom, #1E4552 0%, #C4D7F2 100%);
+        background-image: linear-gradient(to bottom, #1E4552 0%, #C4D7F2 100%);
+        background-repeat:no-repeat;
+    }
+    .qstblock,.ansblock
+    {
+        display:flex;
+        flex-flow:column wrap;
+        -webkit-box-shadow: 2px 8px 25px -2px rgba(0,0,0,0.3);
+           -moz-box-shadow: 2px 8px 25px -2px rgba(0,0,0,0.3);
+                box-shadow: 2px 8px 25px -2px rgba(0,0,0,0.3);
+        border-radius:8px;
+        margin:auto;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        width:70%;
+        background-color: #545f60;
+    }
+    #answer,#question
+    {
+        margin-left:4%;
+        width:92%;
+    }
+    #answer>section:first-child{
+        height: 9em;
+    }
+    #answer>section:first-child>h1,#question>h1
+    {
+        font-family:Copperplate;
+        font-size:1.5em;
+        color: rgba(255,168,0,1);
+    }
+    #answer>section:first-child>h1{
+        float:left; 
+    }
+	.aidhide{
+		display:none;
+	}
+    .ng-section>p,#question>p
+    {
+        word-wrap: break-word;
+        font-family:Georgia;
+        font-size:1.2em;
+        font-weight: 100%;
+        color: white;
+    }
+    .ng-section>footer,#question>footer
+    {
+        font-style: italic;
+        font-family: Cambria;
+        font-size: 1em;
+        font-weight: 100%;
+        text-align: right;
+        color: rgba(110,222,239,0.9);
+    }
+    .ng-section>footer>span,#question>footer>span
+    {
+        padding-left:0.5em;
+        font-size: 0.9em;
+        font-style: italic;
+    }
+    .like{
+        text-align:right;
+    }
+    .like>p
+    {
+        font-family:Cambria;
+        font-size:1em;
+        font-weight: 100%;
+        color: white;
+    }
+    .btnlike, .btndislike
+    {
+        transition:background-color linear 0.5s;
+        border-radius:3px;
+        height:30%;
+        background-color:whitesmoke;
+        color:#767676;
+        font-size: 0.8em;
+    }
+    .btnlike:hover, .btndislike:hover
+    {
+        box-shadow:0 0 6px rgba(110,222,239,0.9);
+        background-color:#d1f4fe;
+        transition-duration:0.5s;
+        cursor:pointer;
+    }
+    .likeimg{
+        float:left;
+    }
+    .liketext{
+        float:left;
+        color:#767676;
+	padding-left:3px;
+    }
+    #anssort{
+        float:right;
+        padding-top: 1.5em;
+    }
+    
+    .qidhide{
+		display:none;
+    }
+    
+<!--The following are sort by style-->
+
+    .big {
+      font-size: 1.2em;
+    }
+
+    #anssort {
+      position: relative;
+      margin-top:25px;
+    }
+    #anssort select {
+      background-color: orange;
+      color: #fff;
+      font-size: inherit;
+      padding: .5em;
+      padding-right: 2.5em;	
+      border: 0;
+      margin: 0;
+      -webkit-appearance: button; 
+    }
+    
+    #anssort option {
+      margin: 0;
+      padding: 12px 0;
+      text-indent: 15px;
+      border-top: 1px solid #ff9900;
+      -moz-transition: all 0.15s ease-in;
+      -o-transition: all 0.15s ease-in;
+      -webkit-transition: all 0.15s ease-in;
+      transition: all 0.15s ease-in;
+    }
+    #anssort option:hover { 
+      color: #ffa800;
+      background: #fff;
+    }
+
+    #anssort::before,
+    #anssort::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+    }
+
+    #anssort::after { 
+      content: "\25BC";
+      height: 1em;
+      font-size: .7em;
+      line-height: 1;
+      right: 1.2em;
+      top: 75%;
+      margin-top: -.5em;
+      color:white;
+    }
+
+
+
+    #ansSec
+    {
+        margin-left:4%; 
+    }
+    #resDwrap{
+    	
+		height:100%;
+    }
+    #answer-btn
+    {
+        transition:background-color linear 0.5s;
+        border-radius:4px;
+        width:100px;
+        height:30px;
+        background-color:rgba(110,222,239,0.8);
+        color:white;
+        text-shadow:0 0 10px white;
+        outline:none;
+    }
+    #answer-btn:hover
+    {
+        box-shadow:0 0 10px orange;
+        background-color:rgba(110,222,239,1);
+        transition-duration:0.5s;
+        cursor:pointer;
+    }
+    #answer-btn:active
+    {
+        position:relative;
+        top:2px;
+    } 
+    @media screen and (max-width:480px)
+    {
+        #answer>section>h1
+        {
+            display:none;
+        }
+        #anssort
+        {
+            float:left;
+        }
+    }
+
+    fieldset>input { display:block; }
+    fieldset>input.text { margin-bottom:12px; width:95%; padding: .4em; }
+    fieldset { padding:0; border:0; margin-top:25px; }
+    #dialog-form {font-size: 62.5%; display:none}
+    .ui-dialog .ui-state-error { padding: .3em; }
+    .validateTips { border: 1px solid transparent; padding: 0.3em; }
+        
+    @media screen and (max-width:480px)
+    {      
+        header > section:nth-of-type(2){
+            padding:0px;
+        }
+        
+        section a{
+            font-size:15px;
+            
+        }
+    }

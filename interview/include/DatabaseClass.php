@@ -1,0 +1,1 @@
+<?php echo "sorry,db is private!";exit;?>
